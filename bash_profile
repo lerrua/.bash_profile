@@ -20,6 +20,8 @@ alias la="ls -a"
 alias ll="ls -lah"
 alias ls="ls -G"
 
+alias clean_pyc='find . -name "*.pyc" -exec rm -rf {} \;'
+
 # fix encoding python
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
