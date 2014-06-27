@@ -7,6 +7,7 @@ export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
 
 PATH=${PATH}:/usr/local/share/python
+PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH=/usr/local/bin:$PATH # OSX Lion bin path
 
 PS1='[\u] \[\033[1;33m\]\w\[\033[0m\] \[\033[0m\]\n\$ '
@@ -53,3 +54,5 @@ fi
 if [ -f ~/.bash_projects ]; then
    source ~/.bash_projects
 fi
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
